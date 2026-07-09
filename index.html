@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GRND — Built for the Stride</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- reusable footprint icon -->
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="footprint" viewBox="0 0 40 60">
+    <ellipse cx="20" cy="40" rx="13" ry="19"/>
+    <circle cx="13" cy="15" r="5.2"/>
+    <circle cx="21" cy="10" r="5.6"/>
+    <circle cx="29" cy="15" r="5.2"/>
+  </symbol>
+</svg>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="index.html" class="brand">GRND<span class="dot">.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="index.html#shoes">Shop</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <a href="index.html#shoes" class="btn nav-cta">Shop Now</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container">
+    <div class="hero-copy">
+      <p class="eyebrow">New Drop — Spring Track Pack</p>
+      <h1 class="hero-title">
+        <span class="line">BUILT FOR</span>
+        <span class="line">THE STRIDE.</span>
+        <span class="line">OWN THE GROUND.</span>
+      </h1>
+      <p class="hero-sub">Shoes engineered on real asphalt, tested on real pavement. Every pair leaves a print worth following.</p>
+      <div class="hero-actions">
+        <a href="#shoes" class="btn btn-primary">Shop the collection</a>
+        <a href="service.html" class="btn btn-ghost">Explore services</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="shoe-glow"></div>
+      <svg class="shoe-icon" viewBox="0 0 240 120" fill="none">
+        <path class="draw" d="M20,95 C15,95 10,90 12,80 C14,60 25,45 45,38 C60,33 75,30 95,28 C115,26 140,25 160,30 C175,33 185,40 195,50 C205,58 215,62 225,65 C230,66 232,70 228,74 C224,78 215,78 205,76 C200,85 185,92 170,94 L20,95 Z"/>
+        <path class="draw" d="M15,95 L225,88 C230,88 234,92 232,97 C230,102 220,104 205,105 L40,108 C25,108 15,104 15,95 Z"/>
+        <path class="draw accent" d="M90,52 L112,34"/>
+        <path class="draw accent" d="M98,60 L120,40"/>
+        <path class="draw accent" d="M106,68 L128,46"/>
+        <path class="draw" d="M96,36 L112,20 L124,32"/>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<!-- FOOTSTEP TRAIL -->
+<div class="stride-trail">
+  <div class="trail-row" id="trail">
+    <svg class="step"><use href="#footprint"/></svg>
+    <svg class="step"><use href="#footprint"/></svg>
+    <svg class="step"><use href="#footprint"/></svg>
+    <svg class="step"><use href="#footprint"/></svg>
+    <svg class="step"><use href="#footprint"/></svg>
+    <svg class="step"><use href="#footprint"/></svg>
+  </div>
+</div>
+
+<!-- FEATURED SHOES -->
+<section class="section" id="shoes">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Fresh off<br>the last.</h2>
+      <p>Four silhouettes from this season's Track Pack — built for pavement, priced for the street.</p>
+    </div>
+
+    <div class="shoe-grid">
+      <article class="shoe-card reveal" style="--tint:#3a2418">
+        <div class="shoe-card__window">
+          <span class="shoe-card__tag">New</span>
+          <svg viewBox="0 0 240 120" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20,95 C15,95 10,90 12,80 C14,60 25,45 45,38 C60,33 75,30 95,28 C115,26 140,25 160,30 C175,33 185,40 195,50 C205,58 215,62 225,65 C230,66 232,70 228,74 C224,78 215,78 205,76 C200,85 185,92 170,94 L20,95 Z"/>
+            <path d="M15,95 L225,88 C230,88 234,92 232,97 C230,102 220,104 205,105 L40,108 C25,108 15,104 15,95 Z"/>
+          </svg>
+        </div>
+        <div class="shoe-card__label">
+          <h3 class="shoe-card__name">Air Stride 07</h3>
+          <p class="shoe-card__sku mono">SKU · GRND-07-BLK</p>
+          <div class="shoe-card__row">
+            <span class="shoe-card__price mono">$128.00</span>
+            <button class="shoe-card__add">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="shoe-card reveal" style="--tint:#243228">
+        <div class="shoe-card__window">
+          <svg viewBox="0 0 240 120" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20,95 C15,95 10,90 12,80 C14,60 25,45 45,38 C60,33 75,30 95,28 C115,26 140,25 160,30 C175,33 185,40 195,50 C205,58 215,62 225,65 C230,66 232,70 228,74 C224,78 215,78 205,76 C200,85 185,92 170,94 L20,95 Z"/>
+            <path d="M15,95 L225,88 C230,88 234,92 232,97 C230,102 220,104 205,105 L40,108 C25,108 15,104 15,95 Z"/>
+          </svg>
+        </div>
+        <div class="shoe-card__label">
+          <h3 class="shoe-card__name">Trackmaster Lo</h3>
+          <p class="shoe-card__sku mono">SKU · GRND-14-OLV</p>
+          <div class="shoe-card__row">
+            <span class="shoe-card__price mono">$104.00</span>
+            <button class="shoe-card__add">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="shoe-card reveal" style="--tint:#2a2a3a">
+        <div class="shoe-card__window">
+          <span class="shoe-card__tag">Restock</span>
+          <svg viewBox="0 0 240 120" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20,95 C15,95 10,90 12,80 C14,60 25,45 45,38 C60,33 75,30 95,28 C115,26 140,25 160,30 C175,33 185,40 195,50 C205,58 215,62 225,65 C230,66 232,70 228,74 C224,78 215,78 205,76 C200,85 185,92 170,94 L20,95 Z"/>
+            <path d="M15,95 L225,88 C230,88 234,92 232,97 C230,102 220,104 205,105 L40,108 C25,108 15,104 15,95 Z"/>
+          </svg>
+        </div>
+        <div class="shoe-card__label">
+          <h3 class="shoe-card__name">Urban Cleat X</h3>
+          <p class="shoe-card__sku mono">SKU · GRND-22-GRY</p>
+          <div class="shoe-card__row">
+            <span class="shoe-card__price mono">$139.00</span>
+            <button class="shoe-card__add">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="shoe-card reveal" style="--tint:#3a2020">
+        <div class="shoe-card__window">
+          <svg viewBox="0 0 240 120" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20,95 C15,95 10,90 12,80 C14,60 25,45 45,38 C60,33 75,30 95,28 C115,26 140,25 160,30 C175,33 185,40 195,50 C205,58 215,62 225,65 C230,66 232,70 228,74 C224,78 215,78 205,76 C200,85 185,92 170,94 L20,95 Z"/>
+            <path d="M15,95 L225,88 C230,88 234,92 232,97 C230,102 220,104 205,105 L40,108 C25,108 15,104 15,95 Z"/>
+          </svg>
+        </div>
+        <div class="shoe-card__label">
+          <h3 class="shoe-card__name">Night Runner</h3>
+          <p class="shoe-card__sku mono">SKU · GRND-31-RED</p>
+          <div class="shoe-card__row">
+            <span class="shoe-card__price mono">$118.00</span>
+            <button class="shoe-card__add">Add</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- USP STRIP -->
+<section class="usp-strip">
+  <div class="container usp-grid">
+    <div class="usp-item reveal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 16V6a1 1 0 011-1h9v11M3 16h13M3 16H1v-3M16 16h5v-5l-3-4h-2v9zM6.5 19a2 2 0 100-4 2 2 0 000 4zM18 19a2 2 0 100-4 2 2 0 000 4z"/></svg>
+      <div>
+        <h3>Free shipping over $75</h3>
+        <p>Fast, tracked delivery on every eligible order, right to your door.</p>
+      </div>
+    </div>
+    <div class="usp-item reveal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4v16M4 4h16v10H4"/><path d="M9 9l3 3 3-5"/></svg>
+      <div>
+        <h3>30-day wear test</h3>
+        <p>Break them in. If they're not right, send them back, no questions.</p>
+      </div>
+    </div>
+    <div class="usp-item reveal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l8 4v6c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+      <div>
+        <h3>Authenticity guaranteed</h3>
+        <p>Every pair verified at the source. No knockoffs, ever.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner" id="contact">
+  <span class="cta-marquee">GRND · GRND · GRND · GRND · GRND · GRND · </span>
+  <div class="container" style="position:relative;">
+    <h2>Join the crew.</h2>
+    <p>Get early access to drops, restocks, and repair-day specials.</p>
+    <a href="service.html" class="btn btn-ghost">Book a fitting</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <a href="index.html" class="brand">GRND<span class="dot">.</span></a>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="index.html#shoes">New arrivals</a>
+          <a href="index.html#shoes">Best sellers</a>
+          <a href="index.html#shoes">Sale</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="service.html">Services</a>
+          <a href="service.html#booking">Book a fitting</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Stores</a>
+          <a href="#">Careers</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 GRND Footwear Co.</span>
+      <span>Made for the pavement.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    navToggle.classList.toggle('open', open);
+    navToggle.setAttribute('aria-expanded', open);
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    navToggle.classList.remove('open');
+  }));
+
+  // scroll reveal
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in-view'); });
+  }, { threshold: 0.2 });
+  document.querySelectorAll('.reveal, .process').forEach(el => io.observe(el));
+
+  // footstep trail stagger
+  const steps = document.querySelectorAll('#trail .step');
+  const trailIO = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        steps.forEach((s, i) => setTimeout(() => s.classList.add('in-view'), i * 120));
+        trailIO.disconnect();
+      }
+    });
+  }, { threshold: 0.4 });
+  if (steps.length) trailIO.observe(document.querySelector('.stride-trail'));
+</script>
+</body>
+</html>
